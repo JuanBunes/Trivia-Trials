@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trivia Trials</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="quiz-container">
+      <div class="centered">
+        <img src="icons/icon16.png" width="200" height="200" alt="Trivia Trials" class="bordered-image">
+      </div>
+      <div id="subquiz-container">
+        <select id="categorySelect" class="form-control mb-2 hidden">
+          <option value="1">Any Category</option>
+        </select>
+        <select id="difficultySelect" class="form-control mb-2 hidden">
+          <option value="" disabled selected>Select Difficulty</option>
+          <option value="any">Any Difficulty</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+        <input type="text" id="amountInput" placeholder="Enter the number of questions to answer" class="hidden">
+        <button id="start-game" class="hidden">Start Game</button>
+        <div id="question-container">
+          <p id="question"></p>
+          <div id="answers"></div>
+        </div>
+        <button id="next-question" style="display:none;">Next Question</button>
+        <button id="play-again" class="hidden">Play Again</button>
+      </div>  
+    </div>
+      
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
